@@ -1,0 +1,82 @@
+<!DOCTYPE html> <html> <head> <title>Small Intestine</title> <style> @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); h2 { font-size: 72px; font-weight: bold; color: #000000; }
+  h3, h4, p, li {
+  font-size: 32px;
+  color: #333333;
+  font-weight: normal;
+  }
+  
+  css
+  Copy
+  body {
+    font-family: 'Times New Roman', cursive;
+    text-align: left;
+  }
+  .language-content {
+    display: none;
+  }
+  .language-content.active {
+    display: block;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  p, li {
+    font-size: 16px;
+  }
+  img {
+    max-width: 50%;
+    float: right;
+  }
+  hr {
+    border: none;
+    height: 4px;
+    background-color: #333333;
+    margin: 20px 0;
+  }
+  </style> </head> <body> <main> <div class="language-content active" id="vi-content"> <h2>Ruột non</h2> <hr> <h3>Cấu tạo và chức năng</h3> <ul> <li>Ruột non rất dài (từ 2-3m), đường kính nhỏ. Biến đổi thức ăn thành các chất đơn giản giúp cơ thể hấp thụ được.</li> <li>Thành ruột có 4 lớp: lớp màng bọc bên ngoài, lớp cơ, lớp dưới niêm mạc và lớp niêm mạc.</li> <li>Ruột non có mạng mao mạch máu và mao mạch bạch huyết dày đặc và phân bố từng lông ruột để hấp thụ chất dinh dưỡng.</li> </ul> <img src="https://scontent.fsgn2-8.fna.fbcdn.net/v/t1.15752-9/436365458_3304759936496319_5339494041446360571_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFKd9KbveNQeKPI6mDe7_ACCBUzuCo6fGkIFTO4Kjp8aRlRmOZ04jrtMR9s5pT0Dtio6ScEXg1Ddm4-7SC-iaci&_nc_ohc=WcGioeR2nYkQ7kNvgFM1fHl&_nc_ht=scontent.fsgn2-8.fna&oh=03_Q7cD1QGPClyhV1QvJkdHH5Dim1qGl2M5cyLrFfs2vu-a7tTapg&oe=667D5FFA" alt="Hình ảnh ruột non"> </div>
+  <div class="language-content" id="en-content">
+    <h2>Small Intestine</h2>
+    <hr>
+    <h3>Structure and Function</h3>
+    <ul>
+      <li>The small intestine is very long (about 2 to 3 meters) and narrow in diameter. It transforms food into simple substances that the body can absorb.</li>
+      <li>Its wall consists of 4 layers: the serosa, muscularis externa, submucosa and mucosa.</li>
+      <li>The small intestine has a dense network of blood capillaries and lymphatic capillaries distributed throughout the villi to facilitate nutrient absorption.</li>
+    </ul>
+    <img src="https://scontent.fsgn2-8.fna.fbcdn.net/v/t1.15752-9/436365458_3304759936496319_5339494041446360571_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFKd9KbveNQeKPI6mDe7_ACCBUzuCo6fGkIFTO4Kjp8aRlRmOZ04jrtMR9s5pT0Dtio6ScEXg1Ddm4-7SC-iaci&_nc_ohc=WcGioeR2nYkQ7kNvgFM1fHl&_nc_ht=scontent.fsgn2-8.fna&oh=03_Q7cD1QGPClyhV1QvJkdHH5Dim1qGl2M5cyLrFfs2vu-a7tTapg&oe=667D5FFA" alt="Small Intestine Image">
+  </div>
+  <nav>
+    <a href="#" id="vi-link" class="active">Tiếng Việt</a>
+    <a href="#" id="en-link">English</a>
+  </nav>
+  <script>
+    const viLink = document.getElementById('vi-link');
+    const enLink = document.getElementById('en-link');
+    const viContent = document.getElementById('vi-content');
+    const enContent = document.getElementById('en-content');
+
+    viLink.addEventListener('click', () => {
+      viLink.classList.add('active');
+      enLink.classList.remove('active');
+      viContent.classList.add('active');
+      enContent.classList.remove('active');
+    });
+
+    enLink.addEventListener('click', () => {
+      enLink.classList.add('active');
+      viLink.classList.remove('active');
+      enContent.classList.add('active');
+      viContent.classList.remove('active');
+    });
+  </script>
+</body>
+</html>
