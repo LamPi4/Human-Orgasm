@@ -3,7 +3,6 @@
 }
 .info-list{
 position: absolute;
-top: 0px;
 }
 .language{
     position: absolute;
@@ -14,4 +13,18 @@ img {
     border: 5px solid black;
     border-radius: 10px 10px 10px 10px;
     margin-bottom: 10px;
+    margin-left:auto;
+    float: right;
+}
+@media only screen and (max-width: 500px){
+    img {
+        display: block;
+        border: 5px solid black;
+        border-radius: 10px 10px 10px 10px;
+        display: block;
+        margin-left:auto;
+        margin-right: auto;
+        float: none;
+        scale: 80%;
+    }
 }
